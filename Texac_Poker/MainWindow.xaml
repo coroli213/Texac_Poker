@@ -1,0 +1,52 @@
+﻿<Window x:Class="Texac_Poker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Texac_Poker"
+        mc:Ignorable="d"
+        WindowStyle="None" ResizeMode="NoResize" WindowState="Maximized" Height="768" Width="1376"
+>
+    <Grid Background="Black">
+
+        <Image HorizontalAlignment="Left" Height="849" VerticalAlignment="Top" Width="1376"  Name="image1" Margin="0,102,0,-183"  />
+
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100"  Name="board1" Margin="420,300,0,0" />
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100"  Name="board2" Margin="530,300,0,0"  />
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100"  Name="board3" Margin="640,300,0,0"  />
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100"  Name="board4" Margin="750,300,0,0"  />
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100"  Name="board5" Margin="860,300,0,0"  />
+
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" Name="player1l" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100" Margin="585,590,0,0"  />
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" Name="player1r" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100" Margin="695,590,0,0"  />
+
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" Name="player2l" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100" Margin="70,464,0,0"  />
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" Name="player2r" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100" Margin="180,464,0,0"  />
+
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" Name="player3l" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100" Margin="230,65,0,0"  />
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" Name="player3r" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100" Margin="340,65,0,0"  />
+
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png"  Name="player4l" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100" Margin="930,65,0,0"  />
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" Name="player4r" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100" Margin="1040,65,0,0"   />
+
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" Name="player5l" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100" Margin="1090,464,0,0"  />
+        <Image Source="C:\Users\maxim\Downloads\minmax\image_part_053.png" Name="player5r" HorizontalAlignment="Left"  Height="150" VerticalAlignment="Top" Width="100" Margin="1200,464,0,0" />
+        <TextBlock Name="tx1" HorizontalAlignment="Left" Margin="640,728,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="30" Width="100" Foreground="White" FontSize="20"/>
+        <TextBlock Name="tx2" HorizontalAlignment="Left" Margin="124,619,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="30" Width="100" Foreground="White" FontSize="20"/>
+        <TextBlock Name="tx3" HorizontalAlignment="Left" Margin="283,215,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="30" Width="100" Foreground="White" FontSize="20"/>
+        <TextBlock Name="tx4" HorizontalAlignment="Left" Margin="982,215,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="30" Width="100" Foreground="White" FontSize="20"/>
+        <TextBlock Name="tx5" HorizontalAlignment="Left" Margin="1144,619,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Height="30" Width="100" Foreground="White" FontSize="20"/>
+
+        <Canvas x:Name="canvas"  Background="Transparent" />
+
+
+        <Button Content="Begin" Width="70" Height="20" Margin="1185,717,10,10" Click="Button_Click"   RenderTransformOrigin="-0.2,-2.45" />
+        <Button Content="Exit" Height="20" Margin="1341,0,0,748" Click="Button_Click_1" RenderTransformOrigin="0.379,0.35" />
+
+        <Button Content="call/chek" Width="100" Margin="968,740,308,3"             Click="Button_Click_Chek" RenderTransformOrigin="0.379,0.35" />
+        <Button Content="rise"      Width="100" Height="25" Margin="860,740,416,3" Click="Button_Click_Rise" RenderTransformOrigin="0.379,0.35" />
+        <Button Content="fold"      Width="100" Height="25" Margin="750,740,526,3" Click="Button_Click_Fold" RenderTransformOrigin="0.379,0.35" />
+
+    </Grid>
+
+</Window>
